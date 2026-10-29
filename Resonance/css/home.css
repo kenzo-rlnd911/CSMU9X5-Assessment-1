@@ -1,0 +1,450 @@
+/* Homepage, Hero Section*/
+
+.hero {
+    background-color: #f5f5f5;
+}
+
+/* Remove Bootstrap's horizontal container padding */
+.hero .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Hero text column */
+.hero .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.hero .col-md-5 img {
+    filter: grayscale(100%) brightness(1.3) contrast(0.65);
+}
+
+/* Hero heading */
+.hero h1 {
+    font-family: "Prata", serif;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #232020;
+}
+
+/* Hero paragraph */
+.hero p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #232020;
+    max-width: 610px;
+    margin-left: 9px;
+}
+
+/* Hero image */
+.hero .col-md-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/*Desktop Styling*/
+
+@media (min-width: 768px) {
+
+    /* Control hero height */
+    .hero .row {
+        height: 400px;
+    }
+
+    /* Prevent image overflow */
+    .hero .col-md-5 {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero .col-md-5 img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Mobile Styling */
+
+@media (max-width: 767px) {
+
+    /* Reduce text padding */
+    .hero .col-md-7 {
+        padding: 40px 20px 25px; 
+    }
+
+    /* Smaller heading */
+    .hero h1 {
+        font-size: 28px;
+        margin-left: 5px;
+    }
+
+    /* Control mobile image height */
+    .hero .col-md-5 img {
+        height: 280px;
+    }
+
+}
+
+/* Homepage, Featured Song Section */
+.featured-song {
+    background-color: #232020;
+    color: white;
+    padding:80px 40px 20px;   
+}
+
+.featured-song h2 {
+    font-family: "Prata", serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.song-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -160px;
+}
+
+.song-content img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    top: 15px;
+    left: 30px;
+}
+
+.info {
+    align-self: start;
+    padding-top: 30px;
+    margin-left: 30px; 
+}
+
+.info h3 {
+    font-family: "Prata", serif;
+    font-size: 33px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+.info p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 25px;
+
+}
+
+.song-description {
+    background-color: #E5E5E5;
+    color: #232020;
+    padding: 25px 30px 25px 310px;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    margin-left: -200px;
+    margin-right: -50px;
+}
+
+.song-description p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    margin-left: -10px;
+    margin-right: -302px;
+    padding-left: 302px;
+    max-width: 1250px;
+}
+
+.song-reflection {
+    padding: 80px 70px 40px 30px;
+    text-align: left;
+}
+
+.song-reflection h3 {
+    font-family: "Prata", serif;
+    font-size: 29px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+
+.song-reflection p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0;
+    margin-left: 40px;
+}
+
+.reflection-second {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.song-reflection a {
+    font-size: 19px;
+    display: block;
+    text-align: right;
+    color: white;
+    text-decoration: underline;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.song-reflection a:hover {  
+    color: #bdbdbd;
+    opacity: 0.7;
+}
+
+/* Mobile Styling for Featured Song Section */
+@media (max-width: 767px) {
+
+    .song-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 0;
+    }
+
+    .info {
+    margin-left: 0;
+    padding-top: 0;
+    text-align: center;
+    }
+
+    .info p {
+    margin-left: 10px;
+    padding-top: 0;
+    text-align: center;
+    }
+
+    .song-content img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .song-description {
+        margin: 30px 0 0;
+        padding: 25px 20px;
+        min-height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    .song-description p {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    .song-reflection {
+    padding: 40px 15px;
+    text-align: center;
+    }
+
+    .song-reflection h3 {
+    font-size: 25px;
+    margin: 0 0 20px;
+    text-align: center;
+    }
+
+    .song-reflection p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+    .reflection-second {
+    display: inline;
+    margin-left: 0;
+    }
+
+    .song-reflection a {
+    display: block;
+    font-size: 16px;
+    margin: 25px 0 0;
+    padding: 0;
+    text-align: center;
+    }
+
+}
+
+
+/* Homepage, Explore Section */
+
+.explore {
+    background-color: #232020;
+    color: white;
+    padding: 70px 70px 60px;
+    border-top: 1px solid #E5E5E5;
+
+}
+
+.explore h2 {
+    font-family: "Prata", serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.explore p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 35px;  
+}
+
+/* Explore Introduction */
+.explore-intro {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Explore Card */
+.explore-card {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+}
+
+/* Card Images */
+.explore-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Card Titles */
+.explore-card h3 {
+    font-family: "Prata", serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+
+/* Card Descriptions */
+.explore-card p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 10px;
+    max-width: 10000px;
+    white-space: nowrap
+}
+
+/* Hover Effect */
+.explore-card:hover {
+    color: #E5E5E5;
+}
+
+.explore-card:hover img {
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+
+/* Mobile Styling for Explore Section */
+
+@media (max-width: 767px) {
+
+    .explore {
+        padding: 40px 15px;
+    }
+
+    .explore h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        margin-left: 34 px;
+    }
+
+    .explore .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .explore-intro {
+        width: 100%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .explore-card {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .explore-card img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .explore h2 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+
+    }
+
+    .explore-card h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+        text-align: left;
+
+    }
+
+    .explore-card p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        white-space: normal;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+ }
