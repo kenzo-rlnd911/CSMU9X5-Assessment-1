@@ -100,13 +100,15 @@
 .top-stories {
     background-color: #232020;
     color: white;
-    padding: 80px 60px;
+    padding: 80px 40px;
 }
 
 .top-stories h2 {
     font-family: "Prata", serif;
     font-size: 35px;
     margin-bottom: 45px;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /* =========================
