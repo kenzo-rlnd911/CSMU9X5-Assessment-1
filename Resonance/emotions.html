@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance | Emotions </title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/emotions.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+
+        <!-- Website logo -->
+        <a class="navbar-brand d-flex align-items-center gap" href="HomePage.html">
+         <img src="Images for Website/ResonanceLogo.png"
+          alt=""
+          width="30"
+          height="30">
+          <span>RESONANCE</span>
+        </a>
+
+        <!-- Mobile hamburger button -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible navigation links -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                   <a class="nav-link" href="HomePage.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="stories.html">Stories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="emotions.html">Emotions</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="mood.html">Mood Explorer</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="culture.html">Culture</a>
+                </li>
+             </ul>
+            </div>
+        </div>
+        </nav>
+
+        <section class="hero">
+        <div class="container-fluid">
+        <div class="row g-0">
+
+            <div class="col-md-7">
+                <h1>The Power of Feeling</h1>
+                <p>Some feelings are difficult to put into words. 
+                    Music gives them a voice. Explore how melodies, 
+                    lyrics and rhythms connect us to our emotions, 
+                    bring memories to life and help us understand ourselves.</p>
+            </div>
+
+            <div class="col-md-5">
+                <img src="Images for Website/Emotion Page/HeroImageForEmotionsPage.jpg" alt="A vinyl record playing on a turntable">
+            </div>
+        </div>
+        </div>
+        </section>
+
+        <!-- A Form of Expression Section -->
+        <section class="expression">
+                <div class="container-fluid">
+
+                    <h2>A Form of Expression</h2>
+
+                    <p class="expression-intro">
+                        Music can express what we sometimes struggle to say.
+                        Each emotion has its own tone, rhythm, and meaning.
+                    </p>
+
+                    <div class="row g-4">
+
+                        <!-- Joy -->
+                        <div class="col-6 col-md-3">
+                            <button class="emotion-card" type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#joyModal">
+
+                                <img src="Images for Website/Emotion Page/Joy(2).jpg"
+                                    alt="Person jumping joyfully">
+
+                                <span class="emotion-name">Joy <span aria-hidden="true">⟶</span></span>
+                            </button>
+                        </div>
+
+                        <!-- Sadness -->
+                        <div class="col-6 col-md-3">
+                            <button class="emotion-card" type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#sadnessModal">
+
+                                <img src="Images for Website/Emotion Page/Sadness.jpg"
+                                    alt="Rain falling on a window">
+
+                                <span class="emotion-name">Sadness <span aria-hidden="true">⟶</span></span>
+                            </button>
+                        </div>
+
+                        <!-- Longing -->
+                        <div class="col-6 col-md-3">
+                            <button class="emotion-card" type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#longingModal">
+
+                                <img src="Images for Website/Emotion Page/Longing.jpg"
+                                    alt="Person standing alone in a quiet station">
+
+                                <span class="emotion-name">Longing <span aria-hidden="true">⟶</span></span>
+                            </button>
+                        </div>
+
+                        <!-- Hope -->
+                        <div class="col-6 col-md-3">
+                            <button class="emotion-card" type="button"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#hopeModal">
+
+                                <img src="Images for Website/Emotion Page/Hope(2).jpg"
+                                    alt="Sunlight breaking through clouds">
+
+                                <span class="emotion-name">Hope <span aria-hidden="true">⟶</span></span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>  
+            
+           <!-- Joy Modal -->
+            <div class="modal fade" id="joyModal" tabindex="-1"
+                aria-labelledby="joyModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content emotion-modal">
+
+                     
+                        <button type="button" class="btn-close emotion-modal-close"
+                                data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+
+                        <div class="row g-0">
+
+                           
+                            <div class="col-12 col-md-5 emotion-modal-left">
+
+                                <img src="Images for Website/Emotion Page/Joy(2).jpg"
+                                    alt="Person jumping joyfully"
+                                    class="emotion-modal-image">
+
+                            </div>
+
+                            
+                            <div class="col-12 col-md-7 emotion-modal-right">
+
+                                <h2 id="joyModalLabel">Joy</h2>
+
+                                <p class="emotion-description">
+                                    Music can capture the feeling of joy through upbeat
+                                    rhythms, bright melodies, and uplifting lyrics.
+                                    It can make us feel energised, optimistic, and more
+                                    connected to the positive moments in life.
+                                    Joyful music often celebrates love, freedom, success,
+                                    and the simple pleasures that make life meaningful.
+                                </p>
+
+                                <h3>Example</h3>
+
+                                <div class="emotion-example">
+
+                                    <img src="Images for Website/Emotion Page/HappySongCover.jpg"
+                                        alt="Happy by Pharrell Williams album artwork">
+
+                                    <div class="emotion-example-info">
+
+                                        <h4>Happy</h4>
+
+                                        <p class="emotion-artist">Pharrell Williams</p>
+
+                                        <p class="emotion-song-description">
+                                            An upbeat song with a lively rhythm and
+                                            cheerful melody that spreads positivity
+                                            and celebrates the joy of living in the moment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sadness Modal -->
+            <div class="modal fade" id="sadnessModal" tabindex="-1"
+                aria-labelledby="sadnessModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content emotion-modal">
+
+                        <button type="button" class="btn-close emotion-modal-close"
+                                data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+
+                        <div class="row g-0">
+
+                            <div class="col-12 col-md-5 emotion-modal-left">
+
+                                <img src="Images for Website/Emotion Page/Sadness.jpg"
+                                    alt="Rain falling on a window"
+                                    class="emotion-modal-image">
+
+                            </div>
+
+                            <div class="col-12 col-md-7 emotion-modal-right">
+
+                                <h2 id="sadnessModalLabel">Sadness</h2>
+
+                                <p class="emotion-description">
+                                    Music can express sadness through gentle melodies,
+                                    slower rhythms, and emotional lyrics. It gives us
+                                    a way to process difficult feelings, whether they
+                                    come from heartbreak, loss, or loneliness.
+                                    Sometimes, listening to a sad song can bring
+                                    comfort by reminding us that we are not alone
+                                    in what we feel.
+                                </p>
+
+                                <h3>Example</h3>
+
+                                <div class="emotion-example">
+
+                                    <img src="Images for Website\Emotion Page\SomeLikeYouSongCover.jpg"
+                                        alt="Someone Like You by Adele album artwork">
+
+                                    <div class="emotion-example-info">
+
+                                        <h4>Someone Like You</h4>
+
+                                        <p class="emotion-artist">Adele</p>
+
+                                        <p class="emotion-song-description">
+                                            A heartfelt ballad about heartbreak and
+                                            acceptance, using emotional vocals and
+                                            a gentle piano melody to express the
+                                            pain of letting go.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Longing Modal -->
+            <div class="modal fade" id="longingModal" tabindex="-1"
+                aria-labelledby="longingModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content emotion-modal">
+
+                        <button type="button" class="btn-close emotion-modal-close"
+                                data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+
+                        <div class="row g-0">
+
+                            <div class="col-12 col-md-5 emotion-modal-left">
+
+                                <img src="Images for Website/Emotion Page/Longing.jpg"
+                                    alt="Person standing alone in a quiet station"
+                                    class="emotion-modal-image">
+
+                            </div>
+
+                            <div class="col-12 col-md-7 emotion-modal-right">
+
+                                <h2 id="longingModalLabel">Longing</h2>
+
+                                <p class="emotion-description">
+                                    Music can capture the feeling of longing through
+                                    emotional melodies, reflective lyrics, and
+                                    atmospheric sounds. It expresses the desire
+                                    for someone, somewhere, or something that
+                                    feels out of reach. Whether it is missing
+                                    a person or remembering a moment from the
+                                    past, music gives these feelings a voice.
+                                </p>
+
+                                <h3>Example</h3>
+
+                                <div class="emotion-example">
+
+                                    <img src="Images for Website/Emotion Page/ApocalypseSongCover.jpg"
+                                        alt="Apocalypse by Cigarettes After Sex album artwork">
+
+                                    <div class="emotion-example-info">
+
+                                        <h4>Apocalypse</h4>
+
+                                        <p class="emotion-artist">Cigarettes After Sex</p>
+
+                                        <p class="emotion-song-description">
+                                            A dreamy, atmospheric song that captures
+                                            the feeling of yearning for someone,
+                                            using soft vocals and a slow melody
+                                            to create a sense of nostalgia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hope Modal -->
+            <div class="modal fade" id="hopeModal" tabindex="-1"
+                aria-labelledby="hopeModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                    <div class="modal-content emotion-modal">
+
+                        <button type="button" class="btn-close emotion-modal-close"
+                                data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+
+                        <div class="row g-0">
+
+                            <div class="col-12 col-md-5 emotion-modal-left">
+
+                                <img src="Images for Website/Emotion Page/Hope(2).jpg"
+                                    alt="Sunlight breaking through clouds"
+                                    class="emotion-modal-image">
+
+                            </div>
+
+                            <div class="col-12 col-md-7 emotion-modal-right">
+
+                                <h2 id="hopeModalLabel">Hope</h2>
+
+                                <p class="emotion-description">
+                                    Music can inspire hope through uplifting melodies,
+                                    powerful lyrics, and encouraging rhythms.
+                                    It reminds us that difficult moments do not
+                                    last forever and that change is always possible.
+                                    Hopeful songs can provide reassurance,
+                                    motivation, and the strength to keep moving
+                                    forward, even when the future feels uncertain.
+                                </p>
+
+                                <h3>Example</h3>
+
+                                <div class="emotion-example">
+
+                                    <img src="Images for Website/Emotion Page/FixYouSongCover.jpg"
+                                        alt="Fix You by Coldplay album artwork">
+
+                                    <div class="emotion-example-info">
+
+                                        <h4>Fix You</h4>
+
+                                        <p class="emotion-artist">Coldplay</p>
+
+                                        <p class="emotion-song-description">
+                                            A comforting song about healing and
+                                            finding strength during difficult times,
+                                            gradually building from a gentle melody
+                                            into a powerful, uplifting arrangement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
