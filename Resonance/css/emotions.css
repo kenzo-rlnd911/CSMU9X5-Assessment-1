@@ -92,7 +92,7 @@
 .expression {
     background-color: #232020;
     color: white;
-    padding: 80px 60px 80px;
+    padding: 90px 60px 80px;
     border-bottom: 1px solid #E5E5E5;
 }
 
@@ -110,6 +110,7 @@
     line-height: 1.6;
     max-width: 850px;
     margin-bottom: 45px;
+    max-width: 1000px;
 }
 
 /* Emotion Cards */
@@ -117,7 +118,7 @@
     display: block;
     width: 100%;
     max-width: 260px;
-    margin: 0 auto;
+;
     padding: 0;
     background: transparent;
     border: none;
@@ -341,7 +342,131 @@
     .emotion-song-description {
         font-size: 11px;
     }
+}
 
-  
+/* =========================
+   A SOUNDTRACK TO MEMORY
+========================= */
 
+.memory {
+    background-color: #232020;
+    color: white;
+    padding: 60px 70px 70px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.memory h2 {
+    font-family: "Prata", serif;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+/* Control overall content width */
+.memory .row {
+    max-width: 1250px;
+    align-items: start !important;
+}
+
+/* Image */
+.memory-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right Content */
+.memory-content {
+    padding-left: 25px;
+    margin-left: 0;
+    padding-top: 20px;
+}
+
+/* Description */
+.memory-description {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+/* Divider */
+.memory-content hr {
+    border: none;
+    border-top: 2px solid #E5E5E5;
+    opacity: 0.6;
+    margin: 20px 0;
+    max-width: 750px;
+}
+/* Reflection Question */
+.memory-question {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+
+/* Reflection Textbox */
+.memory-reflection {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: 150px;
+    padding: 20px;
+    background-color: #E5E5E5;
+    color: #232020;
+    border: none;
+    border-radius: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.memory-reflection::placeholder {
+    color: #777777;
+}
+
+/* =========================
+   MOBILE STYLING
+========================= */
+
+@media (max-width: 767px) {
+
+    .memory {
+        padding: 45px 20px 60px;
+    }
+
+    .memory h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .memory-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .memory-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .memory-description {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .memory-question {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    .memory-reflection {
+        height: 110px;
+        font-size: 14px;
+    }
 }
