@@ -441,25 +441,224 @@
                 </div>
             </section>
 
+            <!-- Why Does It Make Us Feel Section -->
+            <section class="why-feel">
+                <div class="container-fluid">
 
+                    <h2>Why Does It Make Us Feel?</h2>
 
+                    <div class="row g-4 align-items-center">
 
+                        <!-- Left: Text -->
+                        <div class="col-12 col-md-6 why-feel-content">
 
+                            <p>
+                                Music can influence how we feel through its melody,
+                                rhythm and lyrics. Melodies can create tension or
+                                calm, rhythms can affect our energy, and lyrics can
+                                express feelings we struggle to put into words.
+                            </p>
 
+                            <p>
+                                Our memories and personal experiences also shape
+                                how we connect with a song, making its meaning
+                                unique to each listener.
+                            </p>
 
+                        </div>
 
+                        <!-- Right: Image -->
+                        <div class="col-12 col-md-6 why-feel-image">
 
+                            <img src="Images for Website/Emotion Page/WhyDoesItMakeUsFeelImage.jpg"
+                                alt="Vinyl records and handwritten notes">
 
+                        </div>
 
+                    </div>
+                </div>
+            </section>
 
+            <!-- Footer -->
+<footer class="site-footer">
+    <div class="container-fluid">
 
+        <div class="row footer-main">
 
+            <!-- Logo and Description -->
+            <div class="col-12 col-md-6 footer-about">
+                <div class="footer-logo">
+                    <img src="Images for Website/ResonanceLogo.png" alt="Resonance logo">
+                    <span>RESONANCE</span>
+                </div>
 
+                <p>
+                    Resonance explores the stories, emotions<br>
+                    and cultures behind the songs that shape<br>
+                    our lives.
+                </p>
+            </div>
 
+            <!-- Newsletter -->
+            <div class="col-12 col-md-6 footer-newsletter">
+                <h3>STAY CONNECTED</h3>
 
+                <p>
+                    Get updates on featured songs, new stories and discoveries
+                </p>
 
+               <form class="newsletter-form" id="newsletterForm">
+   
+                <div class="newsletter-input">
+       
+                    <input      
+                    type="email"    
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    aria-label="Email address"
+                    autocomplete="email" 
+                    required
+                    >
+                    <button type="submit" id="subscribeBtn">
+                        Subscribe →
+                    </button>
+                </div>               
+                 <p id="newsletterMessage" class="newsletter-message" role="status" aria-live="polite"></p>
+            </form>
+            </div>
+        </div>
+    </div>
 
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Resonance. All rights reserved.</p>
 
+        <div class="footer-legal">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">
+                Terms of Use
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1"
+     aria-labelledby="privacyModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content legal-modal">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="privacyModalLabel">
+                    Privacy Policy
+                </h2>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <h3>About This Website</h3>
+                <p>
+                    Resonance is an educational website exploring the
+                    stories, emotions, and cultural connections behind music.
+                </p>
+
+                <h3>Information and Privacy</h3>
+                <p>
+                    Resonance does not require visitors to create an account
+                    or provide personal information to explore its content.
+                </p>
+
+                <h3>Newsletter Demonstration</h3>
+                <p>
+                    The newsletter subscription is a demonstration feature.
+                    Email addresses entered into the form are not sent to
+                    a server or used to send emails. Submitted addresses
+                    are temporarily held in browser memory to prevent
+                    repeated submissions during the current page visit.
+                </p>
+
+                <h3>External Content</h3>
+                <p>
+                    Resonance may feature links to external websites and
+                    content from third parties. These websites may have
+                    their own privacy practices.
+                </p>
+
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- Terms of Use Modal -->
+<div class="modal fade" id="termsModal" tabindex="-1"
+     aria-labelledby="termsModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content legal-modal">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="termsModalLabel">
+                    Terms of Use
+                </h2>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <h3>Website Purpose</h3>
+                <p>
+                    Resonance is a student project created to explore
+                    how music communicates stories, emotions, and
+                    cultural experiences.
+                </p>
+
+                <h3>Content and Interpretations</h3>
+                <p>
+                    The information presented on Resonance is intended
+                    for educational and informational purposes.
+                    Interpretations of songs and their meanings may vary
+                    between individuals.
+                </p>
+
+                <h3>Third-Party Materials</h3>
+                <p>
+                    Songs, photographs, and other third-party materials
+                    featured on this website remain the property of
+                    their respective copyright holders.
+                </p>
+
+                <h3>External Links</h3>
+                <p>
+                    Resonance may contain links to external websites.
+                    The website does not control the content or
+                    availability of these external resources.
+                </p>
+
+                <h3>Website Availability</h3>
+                <p>
+                    As an educational project, Resonance may be updated,
+                    modified, or temporarily unavailable.
+                </p>
+
+             </div>
+
+            </div>
+         </div>
+    </div>  
 
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
