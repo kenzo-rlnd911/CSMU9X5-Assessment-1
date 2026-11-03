@@ -125,6 +125,7 @@
     color: white;
     text-align: left;
     cursor: pointer;
+    align-items: center;
 }
 
 /* Card Images */
@@ -170,6 +171,16 @@
     outline: 2px solid white;
     outline-offset: 5px;
 }
+
+.expression .row {
+    justify-content: space-between;
+}
+
+.expression .row > div {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* =========================
    MOBILE STYLING
