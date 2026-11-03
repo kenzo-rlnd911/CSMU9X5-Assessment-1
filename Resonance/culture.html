@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resonance | Culture</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/culture.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center gap" href="HomePage.html">
+                <img src="Images for Website/ResonanceLogo.png"
+                     alt="Resonance logo"
+                     width="30"
+                     height="30">
+                <span>RESONANCE</span>
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomePage.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="stories.html">Stories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="emotions.html">Emotions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mood.html">Mood Explorer</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="culture.html">Culture</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Culture Hero Section -->
+    <section class="hero">
+        <div class="container-fluid">
+            <div class="row g-0">
+
+                <div class="col-md-7">
+
+                    <h1>Beyond the Sound</h1>
+
+                    <p>
+                        Music is more than entertainment. It reflects
+                        who we are, brings people together, and carries
+                        traditions across generations. Explore how music
+                        shapes our identities, cultures, and shared
+                        experiences.
+                    </p>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <img src="Images for Website/Culture Page/HeroImageForCulturePage.jpg"
+                         alt="Illustration of musicians performing together">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- More Than Music Section -->
+    <section class="more-than-music">
+        <div class="container-fluid">
+
+            <h2>More Than Music</h2>
+
+            <p class="culture-intro">
+                Discover how music shapes who we are, brings people together,
+                and connects generations.
+            </p>
+
+            <div class="row g-4">
+
+                <!-- Identity Card -->
+                <div class="col-12 col-md-4">
+                    <button class="culture-card"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#identityModal">
+
+                        <img src="Images for Website\Culture Page\ImageForIdentityCard.png"
+                            alt="Musician playing a guitar"
+                            class="culture-card-image">
+
+                        <div class="culture-card-content">
+                            <h3>Identity</h3>
+
+                            <p>
+                                Music reflects our backgrounds,
+                                experiences, and sense of belonging.
+                            </p>
+
+                            <span class="culture-arrow" aria-hidden="true">→</span>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Community Card -->
+                <div class="col-12 col-md-4">
+                    <button class="culture-card"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#communityModal">
+
+                        <img src="Images for Website/Culture Page/ImageForCommunityCard.jpg"
+                            alt="Crowd enjoying music together"
+                            class="culture-card-image">
+
+                        <div class="culture-card-content">
+                            <h3>Community</h3>
+
+                            <p>
+                                Music brings people together
+                                through shared moments and traditions.
+                            </p>
+
+                            <span class="culture-arrow" aria-hidden="true">→</span>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Generations Card -->
+                <div class="col-12 col-md-4">
+                    <button class="culture-card"
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#generationsModal">
+
+                        <img src="Images for Website/Culture Page/ImageForGenerationsCard.jpg"
+                            alt="Two people playing guitars together"
+                            class="culture-card-image">
+
+                        <div class="culture-card-content">
+                            <h3>Generations</h3>
+
+                            <p>
+                                Music carries memories, stories,
+                                and traditions across generations.
+                            </p>
+
+                            <span class="culture-arrow" aria-hidden="true">→</span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Identity Modal -->
+    <div class="modal fade" id="identityModal" tabindex="-1"
+        aria-labelledby="identityModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content culture-modal">
+
+                <button type="button" class="btn-close culture-modal-close"
+                        data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
+                <div class="row g-0">
+
+                    <!-- Left: Image -->
+                    <div class="col-12 col-md-5 culture-modal-left">
+
+                        <img src="Images for Website\Culture Page\ImageForIdentityCard.png"
+                            alt="Musician expressing their identity through music"
+                            class="culture-modal-image">
+
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="col-12 col-md-7 culture-modal-right">
+
+                        <h2 id="identityModalLabel">Identity</h2>
+
+                        <p class="culture-description">
+                            Music is an important part of how we express who
+                            we are. It can reflect our backgrounds, beliefs,
+                            experiences, and personal identities. Through
+                            different genres, lyrics, and traditions, music
+                            gives people a way to express themselves and
+                            connect with others who share similar experiences.
+                        </p>
+
+                        <h3>Example</h3>
+
+                        <div class="culture-example">
+
+                            <img src="Images for Website/Culture Page/BornThisWay.jpg"
+                                alt="Born This Way album artwork">
+
+                            <div class="culture-example-info">
+
+                                <h4>Born This Way</h4>
+
+                                <p class="culture-artist">Lady Gaga</p>
+
+                                <p class="culture-song-description">
+                                    A song celebrating individuality,
+                                    self-acceptance, and the freedom to
+                                    embrace who you are.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Community Modal -->
+    <div class="modal fade" id="communityModal" tabindex="-1"
+        aria-labelledby="communityModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content culture-modal">
+
+                <button type="button" class="btn-close culture-modal-close"
+                        data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
+                <div class="row g-0">
+
+                    <!-- Left: Image -->
+                    <div class="col-12 col-md-5 culture-modal-left">
+
+                        <img src="Images for Website/Culture Page/ImageForCommunityCard.jpg"
+                            alt="People coming together through music"
+                            class="culture-modal-image">
+
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="col-12 col-md-7 culture-modal-right">
+
+                        <h2 id="communityModalLabel">Community</h2>
+
+                        <p class="culture-description">
+                            Music has the power to bring people together,
+                            creating a sense of connection and belonging.
+                            Whether through concerts, festivals, or cultural
+                            celebrations, shared musical experiences can
+                            strengthen relationships and unite people from
+                            different backgrounds.
+                        </p>
+
+                        <h3>Example</h3>
+
+                        <div class="culture-example">
+
+                            <img src="Images for Website/Culture Page/WeAreTheWorld.jpg"
+                                alt="We Are the World single artwork">
+
+                            <div class="culture-example-info">
+
+                                <h4>We Are the World</h4>
+
+                                <p class="culture-artist">USA for Africa</p>
+
+                                <p class="culture-song-description">
+                                    A charity song that brought artists
+                                    together to raise awareness and support
+                                    for humanitarian relief, showing how
+                                    music can unite people for a common cause.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Generations Modal -->
+    <div class="modal fade" id="generationsModal" tabindex="-1"
+        aria-labelledby="generationsModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content culture-modal">
+
+                <button type="button" class="btn-close culture-modal-close"
+                        data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
+                <div class="row g-0">
+
+                    <!-- Left: Image -->
+                    <div class="col-12 col-md-5 culture-modal-left">
+
+                        <img src="Images for Website\Culture Page\ImageForGenerationsCard.jpg"
+                            alt="People from different generations sharing music"
+                            class="culture-modal-image">
+
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="col-12 col-md-7 culture-modal-right">
+
+                        <h2 id="generationsModalLabel">Generations</h2>
+
+                        <p class="culture-description">
+                            Music connects generations by preserving
+                            memories, stories, and traditions. Songs can
+                            be passed down through families and communities,
+                            allowing younger generations to experience the
+                            emotions and cultural influences of the past.
+                            Even as musical styles change, familiar songs
+                            can create meaningful connections between
+                            people of different ages.
+                        </p>
+
+                        <h3>Example</h3>
+
+                        <div class="culture-example">
+
+                            <img src="Images for Website/Culture Page/TeachYourChildren.jpg"
+                                alt="Teach Your Children album artwork">
+
+                            <div class="culture-example-info">
+
+                                <h4>Teach Your Children</h4>
+
+                                <p class="culture-artist">
+                                    Crosby, Stills, Nash & Young
+                                </p>
+
+                                <p class="culture-song-description">
+                                    A song about understanding between generations,
+                                    showing how love, wisdom, and life lessons
+                                    can be passed from parents to children.
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="site-footer">
+    <div class="container-fluid">
+
+        <div class="row footer-main">
+
+            <!-- Logo and Description -->
+            <div class="col-12 col-md-6 footer-about">
+                <div class="footer-logo">
+                    <img src="Images for Website/ResonanceLogo.png" alt="Resonance logo">
+                    <span>RESONANCE</span>
+                </div>
+
+                <p>
+                    Resonance explores the stories, emotions<br>
+                    and cultures behind the songs that shape<br>
+                    our lives.
+                </p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-12 col-md-6 footer-newsletter">
+                <h3>STAY CONNECTED</h3>
+
+                <p>
+                    Get updates on featured songs, new stories and discoveries
+                </p>
+
+               <form class="newsletter-form" id="newsletterForm">
+   
+                <div class="newsletter-input">
+       
+                    <input      
+                    type="email"    
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    aria-label="Email address"
+                    autocomplete="email" 
+                    required
+                    >
+                    <button type="submit" id="subscribeBtn">
+                        Subscribe →
+                    </button>
+                </div>               
+                 <p id="newsletterMessage" class="newsletter-message" role="status" aria-live="polite"></p>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Resonance. All rights reserved.</p>
+
+        <div class="footer-legal">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                Privacy Policy
+            </a>
+
+            <span>|</span>
+
+            <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">
+                Terms of Use
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Privacy Policy Modal -->
+<div class="modal fade" id="privacyModal" tabindex="-1"
+     aria-labelledby="privacyModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content legal-modal">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="privacyModalLabel">
+                    Privacy Policy
+                </h2>
+
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <h3>About This Website</h3>
+                <p>
+                    Resonance is an educational website exploring the
+                    stories, emotions, and cultural connections behind music.
+                </p>
+
+                <h3>Information and Privacy</h3>
+                <p>
+                    Resonance does not require visitors to create an account
+                    or provide personal information to explore its content.
+                </p>
+
+                <h3>Newsletter Demonstration</h3>
+                <p>
+                    The newsletter subscription is a demonstration feature.
+                    Email addresses entered into the form are not sent to
+                    a server or used to send emails. Submitted addresses
+                    are temporarily held in browser memory to prevent
+                    repeated submissions during the current page visit.
+                </p>
+
+                <h3>External Content</h3>
+                <p>
+                    Resonance may feature links to external websites and
+                    content from third parties. These websites may have
+                    their own privacy practices.
+                </p>
+
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <!-- Terms of Use Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1"
+        aria-labelledby="termsModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content legal-modal">
+
+                <div class="modal-header">
+                    <h2 class="modal-title" id="termsModalLabel">
+                        Terms of Use
+                    </h2>
+
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <h3>Website Purpose</h3>
+                    <p>
+                        Resonance is a student project created to explore
+                        how music communicates stories, emotions, and
+                        cultural experiences.
+                    </p>
+
+                    <h3>Content and Interpretations</h3>
+                    <p>
+                        The information presented on Resonance is intended
+                        for educational and informational purposes.
+                        Interpretations of songs and their meanings may vary
+                        between individuals.
+                    </p>
+
+                    <h3>Third-Party Materials</h3>
+                    <p>
+                        Songs, photographs, and other third-party materials
+                        featured on this website remain the property of
+                        their respective copyright holders.
+                    </p>
+
+                    <h3>External Links</h3>
+                    <p>
+                        Resonance may contain links to external websites.
+                        The website does not control the content or
+                        availability of these external resources.
+                    </p>
+
+                    <h3>Website Availability</h3>
+                    <p>
+                        As an educational project, Resonance may be updated,
+                        modified, or temporarily unavailable.
+                    </p>
+
+                </div>
+
+                </div>
+            </div>
+        </div>  
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
