@@ -1,0 +1,392 @@
+/* =========================
+   CULTURE PAGE - HERO
+========================= */
+
+.hero {
+    background-color: #f5f5f5;
+}
+
+/* Remove Bootstrap container padding */
+.hero .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Hero Text Column */
+.hero .col-md-7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-family: "Prata", serif;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-left: 6px;
+    margin-bottom: 20px;
+    color: #232020;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #232020;
+    max-width: 610px;
+    margin-left: 9px;
+}
+
+/* Hero Image */
+.hero .col-md-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+    /* Match the monochrome style */
+    filter: grayscale(100%) brightness(1.3) contrast(0.65);
+}
+
+/* =========================
+   DESKTOP STYLING
+========================= */
+
+@media (min-width: 768px) {
+
+    .hero .row {
+        height: 400px;
+    }
+
+    .hero .col-md-5 {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .hero .col-md-5 img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* =========================
+   MOBILE STYLING
+========================= */
+
+@media (max-width: 767px) {
+
+    .hero .col-md-7 {
+        padding: 40px 20px 25px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-left: 5px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-left: 5px;
+    }
+
+    .hero .col-md-5 img {
+        height: 280px;
+    }
+}
+
+/* =========================
+   MORE THAN MUSIC SECTION
+========================= */
+
+.more-than-music {
+    background-color: #232020;
+    color: white;
+    padding: 90px 70px 80px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* Section Heading */
+.more-than-music h2 {
+    font-family: "Prata", serif;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* Introduction */
+.culture-intro {
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Card */
+.culture-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 340px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #232020;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Card Hover */
+.culture-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Image */
+.culture-card-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card Content */
+.culture-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    padding: 18px;
+}
+
+
+/* Card Title */
+.culture-card h3 {
+    font-family: "Prata", serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Card Description */
+.culture-card p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Circular Arrow */
+.culture-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    margin-top: auto;
+    margin-left: auto;
+    border: 1px solid #999999;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #777777;
+}
+
+/* Keyboard Accessibility */
+.culture-card:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* =========================
+   MOBILE STYLING
+========================= */
+
+@media (max-width: 767px) {
+
+    .more-than-music {
+        padding: 45px 20px 90px;
+    }
+
+    .more-than-music h2 {
+        font-size: 28px;
+    }
+
+    .culture-intro {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .culture-card {
+        max-width: 360px;
+    }
+
+    .culture-card h3 {
+        font-size: 20px;
+    }
+
+    .culture-card p {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   CULTURE MODALS
+========================= */
+
+.culture-modal {
+    background-color: #F5F5F5;
+    color: #232020;
+    border: none;
+    border-radius: 0;
+    position: relative;
+}
+
+/* Close Button */
+.culture-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+
+/* Left Image Column */
+.culture-modal-left {
+    overflow: hidden;
+}
+
+/* Main Image */
+.culture-modal-image {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Right Content Column */
+.culture-modal-right {
+    padding: 35px 30px;
+}
+
+/* Modal Title */
+.culture-modal-right h2 {
+    font-family: "Prata", serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+/* Description */
+.culture-description {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Example Heading */
+.culture-modal-right h3 {
+    font-family: "Prata", serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Song Example Layout */
+.culture-example {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Album Artwork */
+.culture-example img {
+    width: 130px;
+    height: 130px;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    object-fit: cover;
+    flex: 0 0 130px;
+    display: block;
+}
+
+/* Song Information */
+.culture-example-info {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Song Title */
+.culture-example-info h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Artist */
+.culture-artist {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Song Description */
+.culture-song-description {
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* =========================
+   CULTURE MODALS - MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .culture-modal-image {
+        width: 100%;
+        height: 250px;
+        min-height: 0;
+        object-fit: cover;
+    }
+
+    .culture-modal-right {
+        padding: 30px 20px 40px;
+    }
+
+    .culture-modal-right h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .culture-description {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .culture-modal-right h3 {
+        font-size: 20px;
+    }
+
+    .culture-example img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .culture-example-info h4 {
+        font-size: 16px;
+    }
+
+    .culture-song-description {
+        font-size: 11px;
+    }
+}
