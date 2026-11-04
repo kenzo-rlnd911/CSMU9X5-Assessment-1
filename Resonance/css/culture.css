@@ -232,6 +232,8 @@
     .culture-card p {
         font-size: 14px;
     }
+
+
 }
 
 /* =========================
@@ -400,4 +402,9 @@
         line-height: 1.6;
         margin-bottom: 25px;
     }
+    
+    .culture-modal-close {
+     filter: invert(1);
+}
+
 }
